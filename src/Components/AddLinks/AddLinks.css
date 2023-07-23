@@ -1,0 +1,45 @@
+#right-side {
+  flex: 55%;
+}
+
+#right-side-header {
+  margin-top: 20px;
+}
+
+#right-side-header p {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: var(--regular-font-color);
+}
+
+#add-link-button {
+  width: 90%;
+  height: 40px;
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  border: 1px solid var(--purple);
+  color: var(--purple);
+  cursor: pointer;
+}
+
+#add-link-button:hover {
+  background-color: var(--light-purple);
+}
+
+#links-wrapper {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 425px) {
+  #right-side {
+    text-align: center;
+  }
+
+  #links-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

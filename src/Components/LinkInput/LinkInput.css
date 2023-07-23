@@ -1,0 +1,50 @@
+#link-input {
+  width: 90%;
+  padding: 0 10px;
+  height: max-content;
+  margin-top: 30px;
+}
+
+#link-input-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--regular-font-color);
+}
+
+#link-input-header button {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  color: var(--regular-font-color);
+  cursor: pointer;
+}
+
+#link-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#link-input-wrapper label {
+  margin-top: 15px;
+  color: var(--regular-font-color);
+}
+
+#link-input-wrapper select,
+#link-input-wrapper input {
+  padding: 5px;
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.308);
+  height: 42px;
+  font-size: larger;
+  font-weight: 300;
+}
+
+#link-input-wrapper input:focus {
+  border: 1px solid var(--purple);
+  box-shadow: 5px 5px 5px var(--light-purple), -5px -5px 5px var(--light-purple),
+    -5px 5px 5px var(--light-purple), 5px -5px 5px var(--light-purple);
+}

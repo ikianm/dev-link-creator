@@ -1,0 +1,139 @@
+#topbar {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#topbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topbar-logo span {
+  background-color: var(--purple);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  margin-right: 5px;
+}
+
+#link-logo {
+  color: white;
+}
+
+#topbar-navigate-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*prevent blue highlighting*/
+#topbar-navigate-links button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#topbar-navigate-links button:focus {
+  outline: none !important;
+}
+
+.topbar-links {
+  color: var(--regular-font-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.topbar-links:hover {
+  background-color: var(--light-purple);
+  border-radius: var(--border-radius);
+}
+
+.topbar-links.active {
+  color: var(--purple);
+  background-color: var(--light-purple) !important;
+  border-radius: var(--border-radius);
+}
+
+.navigate-logos {
+  margin-right: 5px;
+}
+
+#topbar-preview-button {
+  padding: 9px 30px;
+  text-decoration: none;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: var(--border-radius);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#topbar-preview-button:focus {
+  outline: none !important;
+}
+
+#topbar-preview-button:hover {
+  background-color: var(--light-purple);
+}
+
+@media screen and (max-width: 425px) {
+  .navigate-logos {
+    display: none;
+  }
+
+  #topbar-logo span {
+    width: 15px;
+    height: 15px;
+  }
+
+  #topbar-logo h2 {
+    font-size: 15px;
+  }
+
+  #topbar-preview-button {
+    padding: 7px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #topbar-navigate-links button {
+    font-size: 10.6px;
+  }
+
+  .topbar-links {
+    color: var(--regular-font-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
